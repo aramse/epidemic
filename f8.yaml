@@ -1,0 +1,17 @@
+general:
+  name: covid-simulator
+components:
+  - type: stateless
+    name: web
+    containers:
+      - dir: ./
+        readyCheck:
+          httpGet:
+            port: 80
+            path: /
+    expose:
+      - servicePort: 80
+        containerPort: 80
+        external: true
+    instances: 2
+tests: []
