@@ -3,6 +3,7 @@ general:
 components:
   - type: stateless
     name: epidemic
+    instances: 2
     containers:
       - dir: ./
         readyCheck:
