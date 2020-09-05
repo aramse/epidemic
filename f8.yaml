@@ -1,0 +1,16 @@
+general:
+  name: covid-simulator
+components:
+  - type: stateless
+    name: epidemic
+    containers:
+      - dir: ./
+        readyCheck:
+          httpGet:
+            port: 80
+            path: /
+    expose:
+      - servicePort: 80
+        containerPort: 80
+        external: true
+tests: []
