@@ -2,7 +2,7 @@ general:
   name: covid-simulator
 components:
   - type: stateless
-    name: epidemic
+    name: web
     instances: 2
     containers:
       - dir: ./
