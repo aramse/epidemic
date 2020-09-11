@@ -16,4 +16,5 @@ components:
         external: true
 tests:
   - name: func
-    dir: tests/func 
+    containers:
+      - dir: tests/func 
