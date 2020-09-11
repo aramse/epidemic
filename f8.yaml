@@ -14,4 +14,6 @@ components:
       - servicePort: 80
         containerPort: 80
         external: true
-tests: []
+tests:
+  - name: func
+    dir: tests/func 
