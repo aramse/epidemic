@@ -1,3 +1,3 @@
 FROM centos
 
-RUN curl -v --fail web
+CMD curl -v --fail web
