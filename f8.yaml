@@ -3,6 +3,7 @@ general:
 components:
   - type: stateless
     name: web
+    instances: 2
     containers:
       - dir: ./
         readyCheck:
@@ -13,5 +14,7 @@ components:
       - servicePort: 80
         containerPort: 80
         external: true
-    instances: 2
-tests: []
+tests:
+  - name: func
+    containers:
+      - dir: tests/func 
